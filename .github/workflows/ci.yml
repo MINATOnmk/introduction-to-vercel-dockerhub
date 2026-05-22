@@ -33,6 +33,3 @@ jobs:
 
      - name: checkout code
        uses: actions/checkout@v4
-      
-     - name: log into dockerhub
-       uses:
