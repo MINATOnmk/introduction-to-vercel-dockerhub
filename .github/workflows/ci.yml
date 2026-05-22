@@ -26,3 +26,13 @@ jobs:
         run: cat .prettierrc
       - name: Run Prettier
         run: npx prettier --write .
+  build:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+
+     - name: checkout code
+       uses: actions/checkout@v4
+      
+     - name: log into dockerhub
+       uses:
