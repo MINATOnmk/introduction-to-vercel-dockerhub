@@ -1,0 +1,26 @@
+name: Docker CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Prettier
+        run: npm install --save-dev --save-exact prettier
+
+      - name: Create .prettierrc
+        run: |
+          echo '{
+            "tabWidth": 4,
+            "semi": true
+          }' > .prettierrc
+
+      - name: Run Prettier
+        run: npx prettier --write .
