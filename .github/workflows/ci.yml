@@ -43,7 +43,7 @@ jobs:
        uses: docker/build-push-action@v6
        with:
         context: .
-        file: ./Dockerfile.test
+        file: ./dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/node-app:v1.0.0
 

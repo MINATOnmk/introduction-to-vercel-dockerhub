@@ -1,15 +1,19 @@
 FROM node:20-alpine
 
-WORKDIR /node-app
+CMD ["echo" , "HELLO"]
 
-COPY package*.json .
+# FROM node:20-alpine
 
-RUN npm ci
+# WORKDIR /node-app
 
-COPY . .
+# COPY package*.json .
 
-RUN npm run build
+# RUN npm ci
 
-EXPOSE 3000
+# COPY . .
 
-CMD ["npm" , "start"]
+# RUN npm run build
+
+# EXPOSE 3000
+
+# CMD ["npm" , "start"]
