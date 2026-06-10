@@ -3,3 +3,4 @@ services:
   image: mboulagh/node-app:v1.0.0
   ports: 
    - "3000:3000"
+ 
