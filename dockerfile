@@ -1,7 +1,3 @@
-# FROM node:20-alpine
-
-# CMD ["echo" , "HELLO"]
-
 FROM node:20-alpine
 
 WORKDIR /node-app
