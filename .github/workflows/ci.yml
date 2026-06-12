@@ -50,3 +50,4 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/node-app:v1.0.0
+ss
